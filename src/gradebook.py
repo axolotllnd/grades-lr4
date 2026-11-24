@@ -13,7 +13,7 @@ class GradeBook:
 
     def remove(self, grade):
         if grade not in self._grades:
-            return
+            raise ValueError('Оценка отсутствует')
         self._grades.remove(grade)
 
     def values(self):

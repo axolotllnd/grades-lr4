@@ -2,4 +2,4 @@
 
 
 def is_valid_grade(value):
-    return type(value) is int and 2 <= value <= 6
+    return type(value) is int and 2 <= value <= 5
