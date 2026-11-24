@@ -1,0 +1,9 @@
+# ЛР №4 — система обработки оценок (вариант 16)
+
+Самостоятельный учебный проект по варианту, уровни 1 и 2. Оценки — целые числа 2–5; пустой журнал имеет среднее 0, отсутствующая оценка при удалении вызывает ValueError. Успешность: непустой журнал, средний балл не ниже 4 либо отсутствие двоек.
+
+```bash
+python -m pip install -r requirements.txt
+python -m pytest tests/ -v --cov=src --cov-branch --cov-report=term-missing --cov-fail-under=70
+python -m flake8 src/ tests/ --max-line-length=100
+```
