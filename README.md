@@ -7,3 +7,7 @@ python -m pip install -r requirements.txt
 python -m pytest tests/ -v --cov=src --cov-branch --cov-report=term-missing --cov-fail-under=70
 python -m flake8 src/ tests/ --max-line-length=100
 ```
+
+История Git включена. В ней сохранены исходная версия с двумя учебными дефектами, тесты, исправления и документация. Для воспроизведения первоначальных дефектов выполнить `git switch --detach 2a951c5`, затем `python -m pytest tests/ -q`; для возврата к исправленному коду — `git switch main`.
+
+Автоматическую проверку flake8 необходимо выполнить локально: в среде подготовки проекта пакет не установлен.
